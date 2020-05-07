@@ -91,7 +91,7 @@ namespace Bacchus.MVC.View.MainView
 
                 ListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListView.Text = "Articles";
-                ToolStripStatusLabel.Text = "Tous les articles: " + ModelList.Articles.Count;
+                ToolStripStatusLabel1.Text = "Tous les articles: " + ModelList.Articles.Count;
             }
 
             else if (Node.Text.Equals("Familles"))
@@ -123,7 +123,7 @@ namespace Bacchus.MVC.View.MainView
 
                 ListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListView.Text = "Familles";
-                ToolStripStatusLabel.Text = "Familles: " + ModelList.Familles.Count;
+                ToolStripStatusLabel1.Text = "Familles: " + ModelList.Familles.Count;
             }
 
             else if (Node.Text.Equals("Marques"))
@@ -154,7 +154,7 @@ namespace Bacchus.MVC.View.MainView
 
                 ListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListView.Text = "Marques";
-                ToolStripStatusLabel.Text = "Marques: " + ModelList.Marques.Count;
+                ToolStripStatusLabel1.Text = "Marques: " + ModelList.Marques.Count;
             }
 
             else if (FamilleNames.Contains(Node.Text))
@@ -185,7 +185,7 @@ namespace Bacchus.MVC.View.MainView
 
                 ListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListView.Text = "SousFamilles";
-                ToolStripStatusLabel.Text = "SousFamilles de " + Node.Text + ": " + SousFamilles.Count;
+                ToolStripStatusLabel1.Text = "SousFamilles de " + Node.Text + ": " + SousFamilles.Count;
             }
 
             else if (MarqueNames.Contains(Node.Text))
@@ -208,7 +208,7 @@ namespace Bacchus.MVC.View.MainView
 
                 ListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListView.Text = "Articles";
-                ToolStripStatusLabel.Text = "Articles de Marque " + Node.Text + ": " + Articles.Count;
+                ToolStripStatusLabel1.Text = "Articles de Marque " + Node.Text + ": " + Articles.Count;
             }
 
             else if (SousFamilleNames.Contains(Node.Text))
@@ -231,7 +231,7 @@ namespace Bacchus.MVC.View.MainView
 
                 ListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
                 ListView.Text = "Articles";
-                ToolStripStatusLabel.Text = "Articles de Sous-famille " + Node.Text + ": " + Articles.Count;
+                ToolStripStatusLabel1.Text = "Articles de Sous-famille " + Node.Text + ": " + Articles.Count;
             }
 
             TreeView.ExpandAll();
@@ -860,5 +860,6 @@ namespace Bacchus.MVC.View.MainView
                     break;
             }
         }
+
     }
 }
